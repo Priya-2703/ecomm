@@ -18,9 +18,9 @@ function App() {
   return (
     <Router>
     <Routes>
-        <Route path="/" element={<Login />} />
+{/*         <Route path="/" element={<Login />} /> */}
         <Route path="/cart" element={<Cart />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/honey" element={<Honey />} />
         <Route path="/tea" element={<Tea />} />
         <Route path="/hairoil" element={<Hairoil />} />
