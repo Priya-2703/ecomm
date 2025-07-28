@@ -1,0 +1,340 @@
+/* Dashboard Styles */
+.heeka-admin-dashboard {
+  width: 100%;
+}
+
+.heeka-admin-page-header {
+  margin-bottom: 32px;
+}
+
+.heeka-admin-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.heeka-admin-page-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Stats Grid */
+.heeka-admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.heeka-admin-stat-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  padding: 24px;
+  transition: box-shadow 0.2s ease;
+}
+
+.heeka-admin-stat-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.heeka-admin-stat-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heeka-admin-stat-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.heeka-admin-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.heeka-admin-stat-change {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.heeka-admin-stat-change.heeka-admin-positive {
+  color: #059669;
+}
+
+.heeka-admin-stat-change.heeka-admin-negative {
+  color: #dc2626;
+}
+
+.heeka-admin-trend-icon {
+  margin-right: 4px;
+}
+
+.heeka-admin-stat-icon {
+  padding: 12px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heeka-admin-stat-icon.heeka-admin-blue {
+  background-color: #3b82f6;
+}
+
+.heeka-admin-stat-icon.heeka-admin-green {
+  background-color: #10b981;
+}
+
+.heeka-admin-stat-icon.heeka-admin-purple {
+  background-color: #8b5cf6;
+}
+
+.heeka-admin-stat-icon.heeka-admin-red {
+  background-color: #ef4444;
+}
+
+/* Dashboard Cards */
+.heeka-admin-dashboard-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.heeka-admin-card-header {
+  padding: 24px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.heeka-admin-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.heeka-admin-card-content {
+  padding: 24px;
+}
+
+.heeka-admin-top-products {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heeka-admin-top-product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heeka-admin-product-rank {
+  display: flex;
+  align-items: center;
+}
+
+.heeka-admin-rank-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-right: 12px;
+}
+
+.heeka-admin-top-product-name {
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 2px;
+}
+
+.heeka-admin-top-product-sales {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.heeka-admin-top-product-price {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+/* Orders Table */
+.heeka-admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.heeka-admin-orders-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.heeka-admin-orders-table td {
+  padding: 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.heeka-admin-order-row:hover {
+  background-color: #f9fafb;
+}
+
+.heeka-admin-order-id {
+  font-weight: 500;
+  color: #3b82f6;
+}
+
+.heeka-admin-order-customer {
+  font-weight: 500;
+}
+
+.heeka-admin-order-date {
+  color: #6b7280;
+}
+
+.heeka-admin-order-amount {
+  font-weight: 500;
+}
+
+.heeka-admin-status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.heeka-admin-status-badge.heeka-admin-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.heeka-admin-status-badge.heeka-admin-processing {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.heeka-admin-status-badge.heeka-admin-shipped {
+  background-color: #e9d5ff;
+  color: #6b21a8;
+}
+
+.heeka-admin-status-badge.heeka-admin-delivered {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.heeka-admin-status-badge.heeka-admin-cancelled {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Filters */
+.heeka-admin-filters-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.heeka-admin-filters-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .heeka-admin-filters-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.heeka-admin-filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .heeka-admin-filter-controls {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.heeka-admin-time-select,
+.heeka-admin-product-select {
+  position: relative;
+}
+
+.heeka-admin-filter-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.heeka-admin-filter-field {
+  padding: 8px 32px 8px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.heeka-admin-filter-field:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heeka-admin-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .heeka-admin-top-product-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

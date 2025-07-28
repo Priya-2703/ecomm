@@ -1,0 +1,315 @@
+/* Orders Section */
+.heeka-admin-orders-section {
+  width: 100%;
+}
+
+.heeka-admin-page-header {
+  margin-bottom: 32px;
+}
+
+.heeka-admin-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.heeka-admin-page-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Filters */
+.heeka-admin-filters-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.heeka-admin-filters-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .heeka-admin-filters-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.heeka-admin-filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .heeka-admin-filter-controls {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.heeka-admin-search-input {
+  position: relative;
+}
+
+.heeka-admin-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.heeka-admin-search-field {
+  padding: 8px 16px 8px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+  min-width: 200px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.heeka-admin-search-field:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.heeka-admin-status-select,
+.heeka-admin-payment-select {
+  position: relative;
+}
+
+.heeka-admin-filter-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.heeka-admin-filter-field {
+  padding: 8px 32px 8px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.heeka-admin-filter-field:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.heeka-admin-results-count {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Orders Table */
+.heeka-admin-table-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+}
+
+.heeka-admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.heeka-admin-table-header {
+  background-color: #f9fafb;
+}
+
+.heeka-admin-table-header th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.heeka-admin-order-row {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.heeka-admin-order-row:hover {
+  background-color: #f9fafb;
+}
+
+.heeka-admin-order-row td {
+  padding: 16px;
+  font-size: 14px;
+}
+
+.heeka-admin-order-id {
+  font-weight: 500;
+  color: #3b82f6;
+}
+
+.heeka-admin-order-customer {
+  font-weight: 500;
+}
+
+.heeka-admin-order-date {
+  color: #6b7280;
+}
+
+.heeka-admin-order-amount {
+  font-weight: 500;
+}
+
+.heeka-admin-status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.heeka-admin-status-badge.heeka-admin-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.heeka-admin-status-badge.heeka-admin-processing {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.heeka-admin-status-badge.heeka-admin-shipped {
+  background-color: #e9d5ff;
+  color: #6b21a8;
+}
+
+.heeka-admin-status-badge.heeka-admin-delivered {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.heeka-admin-status-badge.heeka-admin-cancelled {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.heeka-admin-payment-method {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.heeka-admin-order-actions {
+  text-align: center;
+}
+
+.heeka-admin-action-btn {
+  padding: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+  color: #9ca3af;
+}
+
+.heeka-admin-action-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.heeka-admin-action-btn.heeka-admin-view:hover {
+  color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heeka-admin-orders-table {
+    font-size: 12px;
+  }
+  
+  .heeka-admin-table-header th,
+  .heeka-admin-order-row td {
+    padding: 8px 12px;
+  }
+  
+  .heeka-admin-payment-method {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heeka-admin-orders-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .heeka-admin-orders-table thead,
+  .heeka-admin-orders-table tbody,
+  .heeka-admin-orders-table th,
+  .heeka-admin-orders-table td,
+  .heeka-admin-orders-table tr {
+    display: block;
+  }
+  
+  .heeka-admin-orders-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .heeka-admin-orders-table tr {
+    border: 1px solid #e5e7eb;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .heeka-admin-orders-table td {
+    border: none;
+    position: relative;
+    padding: 8px 0;
+    padding-left: 50%;
+    text-align: right;
+  }
+  
+  .heeka-admin-orders-table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    text-align: left;
+    font-weight: 600;
+    color: #6b7280;
+  }
+}

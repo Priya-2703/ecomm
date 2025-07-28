@@ -1,0 +1,421 @@
+/* Main Hair Oil Container */
+.hh-main-container {
+  background: linear-gradient(135deg, #f5f9f4 0%, #e8f2e3 30%, #e0ebd8 70%, #d9e5d1 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hh-main-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(135, 169, 107, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(107, 142, 35, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(135, 169, 107, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Hair Navigation */
+.hh-nav {
+  position: sticky;
+  top: 60px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(107, 142, 35, 0.1);
+  border-bottom: 1px solid rgba(135, 169, 107, 0.2);
+}
+
+.hh-nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hh-view-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.hh-view-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #6b8e23;
+  font-size: 1rem;
+}
+
+.hh-view-btn:hover {
+  background: #f5f9f4;
+}
+
+.hh-view-btn.hh-view-active {
+  background: linear-gradient(135deg, #87a96b 0%, #6b8e23 100%);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Hair Section Styles */
+.hh-section {
+  padding: 5rem 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hh-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hh-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hh-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6b8e23;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hh-subtitle {
+  font-size: 1.25rem;
+  color: #6b8e23;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Benefits Section */
+.hh-benefits-section {
+  background: transparent;
+}
+
+.hh-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.hh-benefit-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(135, 169, 107, 0.2);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.hh-benefit-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.5rem);
+}
+
+.hh-benefit-icon-container {
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hh-benefit-card:hover .hh-benefit-icon-container {
+  transform: scale(1.1);
+}
+
+.hh-benefit-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #87a96b;
+}
+
+.hh-benefit-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6b8e23;
+  margin-bottom: 1rem;
+}
+
+.hh-benefit-description {
+  color: #6b8e23;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+/* Process Section */
+.hh-process-section {
+  background: linear-gradient(180deg, rgba(245, 249, 244, 0.5) 0%, rgba(232, 242, 227, 0.5) 100%);
+}
+
+.hh-crafting-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hh-timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hh-timeline-item.hh-timeline-reverse {
+  flex-direction: row-reverse;
+}
+
+.hh-timeline-content {
+  flex: 1;
+}
+
+.hh-process-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hh-process-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.hh-process-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.hh-stage-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #87a96b;
+  margin-right: 1rem;
+}
+
+.hh-process-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6b8e23;
+}
+
+.hh-process-description {
+  color: #6b8e23;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.hh-timeline-icon {
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(135deg, #87a96b 0%, #6b8e23 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.hh-oil-drop {
+  font-size: 2.5rem;
+}
+
+/* Products Section */
+.hh-products-section {
+  background: transparent;
+}
+
+.hh-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.hh-product-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hh-product-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.5rem);
+}
+
+.hh-product-image-container {
+  position: relative;
+}
+
+.hh-product-image-bg {
+  height: 12rem;
+  background: linear-gradient(135deg, #f5f9f4 0%, #e8f2e3 50%, #e0ebd8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hh-product-emoji {
+  font-size: 3.75rem;
+  transition: transform 0.3s ease;
+}
+
+.hh-product-card:hover .hh-product-emoji {
+  transform: scale(1.1);
+}
+
+.hh-product-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.hh-product-tag span {
+  background: linear-gradient(135deg, #87a96b 0%, #6b8e23 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.hh-product-info {
+  padding: 1.5rem;
+}
+
+.hh-product-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.hh-product-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6b8e23;
+}
+
+.hh-product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.hh-rating-star {
+  width: 1rem;
+  height: 1rem;
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.hh-rating-value {
+  font-size: 0.875rem;
+  color: #6b8e23;
+  margin-left: 0.25rem;
+}
+
+.hh-product-description {
+  color: #6b8e23;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.hh-product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hh-product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6b8e23;
+}
+
+.hh-add-to-cart-btn {
+  background: linear-gradient(135deg, #87a96b 0%, #6b8e23 100%);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hh-add-to-cart-btn:hover {
+  background: linear-gradient(135deg, #6b8e23 0%, #87a96b 100%);
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hh-main-title {
+    font-size: 2rem;
+  }
+  
+  .hh-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hh-timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hh-timeline-item.hh-timeline-reverse {
+    flex-direction: column;
+  }
+  
+  .hh-view-switcher {
+    gap: 1rem;
+  }
+  
+  .hh-view-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .hh-section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hh-benefits-grid,
+  .hh-products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hh-timeline-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .hh-oil-drop {
+    font-size: 2rem;
+  }
+  
+  .hh-product-emoji {
+    font-size: 2.5rem;
+  }
+}

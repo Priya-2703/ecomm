@@ -1,0 +1,642 @@
+/* Products Section */
+.heeka-admin-products-section {
+  width: 100%;
+}
+
+.heeka-admin-page-header-with-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.heeka-admin-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.heeka-admin-page-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Primary Button */
+.heeka-admin-primary-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.heeka-admin-primary-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Filters */
+.heeka-admin-filters-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.heeka-admin-filters-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .heeka-admin-filters-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.heeka-admin-filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .heeka-admin-filter-controls {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.heeka-admin-search-input {
+  position: relative;
+}
+
+.heeka-admin-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.heeka-admin-search-field {
+  padding: 8px 16px 8px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+  min-width: 200px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.heeka-admin-search-field:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.heeka-admin-category-select {
+  position: relative;
+}
+
+.heeka-admin-filter-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.heeka-admin-category-field {
+  padding: 8px 32px 8px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.heeka-admin-category-field:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.heeka-admin-results-count {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Products Table */
+.heeka-admin-table-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+}
+
+.heeka-admin-products-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.heeka-admin-table-header {
+  background-color: #f9fafb;
+}
+
+.heeka-admin-table-header th {
+  padding: 12px 24px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.heeka-admin-product-row {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.heeka-admin-product-row:hover {
+  background-color: #f9fafb;
+}
+
+.heeka-admin-product-row td {
+  padding: 16px 24px;
+  font-size: 14px;
+}
+
+.heeka-admin-product-info {
+  width: 40%;
+}
+
+.heeka-admin-product-details {
+  display: flex;
+  align-items: center;
+}
+
+.heeka-admin-product-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.heeka-admin-product-icon.heeka-admin-honey {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.heeka-admin-product-icon.heeka-admin-tea {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.heeka-admin-product-icon.heeka-admin-haircare {
+  background-color: #e9d5ff;
+  color: #9333ea;
+}
+
+.heeka-admin-product-name {
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 2px;
+}
+
+.heeka-admin-product-category {
+  font-size: 14px;
+  color: #6b7280;
+  text-transform: capitalize;
+}
+
+.heeka-admin-product-price {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.heeka-admin-product-stock {
+  text-align: center;
+}
+
+.heeka-admin-stock-badge {
+  display: inline-flex;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.heeka-admin-stock-badge.heeka-admin-high {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.heeka-admin-stock-badge.heeka-admin-medium {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.heeka-admin-stock-badge.heeka-admin-low {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.heeka-admin-product-sales {
+  color: #1f2937;
+}
+
+.heeka-admin-product-actions {
+  text-align: center;
+}
+
+.heeka-admin-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.heeka-admin-action-btn {
+  padding: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+  color: #9ca3af;
+}
+
+.heeka-admin-action-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.heeka-admin-action-btn.heeka-admin-view:hover {
+  color: #2563eb;
+}
+
+.heeka-admin-action-btn.heeka-admin-edit:hover {
+  color: #059669;
+}
+
+.heeka-admin-action-btn.heeka-admin-delete:hover {
+  color: #dc2626;
+}
+
+.heeka-admin-product-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+/* Modal Styles */
+.heeka-admin-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.heeka-admin-modal {
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: heeka-admin-modal-fadeIn 0.3s ease-out;
+}
+
+.heeka-admin-modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heeka-admin-modal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.heeka-admin-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.heeka-admin-modal-close:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.heeka-admin-modal-body {
+  padding: 20px;
+}
+
+.heeka-admin-modal-footer {
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Form Styles */
+.heeka-admin-form-group {
+  margin-bottom: 16px;
+}
+
+.heeka-admin-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.heeka-admin-form-group input,
+.heeka-admin-form-group textarea,
+.heeka-admin-form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.heeka-admin-form-group input:focus,
+.heeka-admin-form-group textarea:focus,
+.heeka-admin-form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.heeka-admin-form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.heeka-admin-form-row .heeka-admin-form-group {
+  flex: 1;
+}
+
+/* Custom Select */
+.heeka-admin-custom-select {
+  position: relative;
+}
+
+.heeka-admin-custom-select select {
+  appearance: none;
+  padding-right: 36px;
+}
+
+.heeka-admin-select-arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6b7280;
+}
+
+/* Button Styles */
+.heeka-admin-secondary-button {
+  background-color: white;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.heeka-admin-secondary-button:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.heeka-admin-required {
+  color: #dc2626;
+  margin-left: 4px;
+}
+
+/* Animations */
+@keyframes heeka-admin-modal-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image Upload Styles */
+.heeka-admin-image-upload {
+  margin-top: 8px;
+}
+
+.heeka-admin-upload-label {
+  display: block;
+  cursor: pointer;
+}
+
+.heeka-admin-upload-input {
+  display: none;
+}
+
+.heeka-admin-upload-content {
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+.heeka-admin-upload-content:hover {
+  border-color: #2563eb;
+}
+
+.heeka-admin-upload-icon {
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.heeka-admin-upload-hint {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.heeka-admin-image-preview {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.heeka-admin-image-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.heeka-admin-remove-image {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.heeka-admin-remove-image:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heeka-admin-page-header-with-action {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .heeka-admin-products-table {
+    font-size: 12px;
+  }
+  
+  .heeka-admin-table-header th,
+  .heeka-admin-product-row td {
+    padding: 8px 12px;
+  }
+  
+  .heeka-admin-product-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .heeka-admin-product-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  
+  .heeka-admin-action-buttons {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heeka-admin-products-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .heeka-admin-products-table thead,
+  .heeka-admin-products-table tbody,
+  .heeka-admin-products-table th,
+  .heeka-admin-products-table td,
+  .heeka-admin-products-table tr {
+    display: block;
+  }
+  
+  .heeka-admin-products-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .heeka-admin-products-table tr {
+    border: 1px solid #e5e7eb;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .heeka-admin-products-table td {
+    border: none;
+    position: relative;
+    padding: 8px 0;
+    padding-left: 50%;
+    text-align: right;
+  }
+  
+  .heeka-admin-products-table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    text-align: left;
+    font-weight: 600;
+    color: #6b7280;
+  }
+  
+  .heeka-admin-modal {
+    margin: 0 16px;
+  }
+  
+  .heeka-admin-form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
